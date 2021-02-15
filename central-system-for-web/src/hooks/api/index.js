@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-const hostname = "http://localhost:8000";
-//const hostname = 'http://Efimob:8000';
+//const hostname = "http://localhost:8000";
+const hostname = 'http://Efimob:8000';
 
 const options = {
   headers: {

@@ -1,7 +1,7 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
 mongoose
-  .connect("mongodb+srv://Pablo:MIDB2021@cluster0.3uupw.mongodb.net/Efimob?retryWrites=true&w=majority", {
+  .connect("mongodb://mongo:27017/Efimob?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
