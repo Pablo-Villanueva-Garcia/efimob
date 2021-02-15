@@ -37,7 +37,7 @@ const parseQueryString = (queryString) => {
 
 const Chargetpoint = () => {
   const [page, setpage] = useState(0);
-  const [pagesize, setpagesize] = useState(9);
+  const [pagesize] = useState(9);
   const location = useLocation();
   const queryString = parseQueryString(location.search);
 

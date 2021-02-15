@@ -1,7 +1,7 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
 mongoose
-  .connect("mongodb://mongo:27017/Efimob?retryWrites=true&w=majority", {
+  .connect("mongodb://db:27017/efimob?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -13,7 +13,7 @@ const Organization = mongoose.model("organization", {
   legalentity: String,
 });
 
-const ChargePoint = mongoose.model("chargerpoint", {
+const ChargePoint = mongoose.model("chargerpoints", {
   identify: String,
 });
 
@@ -26,6 +26,3 @@ module.exports = {
   ChargePoint,
   User,
 };
-
-
-
