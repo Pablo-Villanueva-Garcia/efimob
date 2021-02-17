@@ -7,9 +7,6 @@
 
 ## Usage
 
-    cd central-system-for-web
-    npm install
-    cd ..
     docker-compose up
 
 ## Endpoints
